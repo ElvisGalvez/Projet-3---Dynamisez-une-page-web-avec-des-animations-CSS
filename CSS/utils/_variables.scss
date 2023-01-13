@@ -1,0 +1,14 @@
+/*dans utils/, vous rangez vos variables, fonctions, mixins et les  
+%placeholders pour les extensions (si vous en utilisez) ;*/
+
+
+
+$colour-primary: #9356DC;
+$colour-secondary: #FF79DA;
+$colour-tertiary: #99E2D0;
+
+@mixin header-typo{
+    font-family: 'Shrikhand';
+    font-style: italic;
+    font-weight: 900;
+}

@@ -1,0 +1,19 @@
+
+.presentation{
+    &__btn{ 
+    background-color: $colour-primary; 
+    color: white; 
+    padding: 11px 27px; 
+    border-radius: 20px; 
+    box-shadow: 50px;
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    cursor: pointer; 
+    
+    &:hover{
+        background-color: lighten($colour-primary, 10%);
+    }
+}
+}
