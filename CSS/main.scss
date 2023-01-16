@@ -2,6 +2,141 @@
 @import "base/base";
 @import "composants/boutons";
 
-h1{
-    @include header-typo;
+header {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 10px 0px;
+
+    h1 {
+        @include header-typo;
+    }
 }
+
+.location {
+    @include row;
+    justify-content: center;
+    box-shadow: inset 0px 2px 2px rgba(124, 122, 122, 0.5);
+    background-color: rgba(234,234,234,255);
+    padding: 10px 0px 10px 0px;
+    font-size: 14px;
+
+    &__text{
+        font-weight: bold;
+    }
+    
+    &__icon{
+        padding: 0px 15px 0px 0px;
+    }
+}
+
+.presentation{
+    background-color: rgba(247,247,247,255);
+    padding: 0px 0px 40px 10px;
+    margin: 0px 0px 35px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    height: 250px;
+}
+
+.steps{
+    margin: 0px 0px 30px 10px;
+}
+
+.steps-menu{
+    @include row;
+    background-color: rgba(247,247,247,255);
+    box-shadow: 2px 2px 5px #ccc;
+    width: 90%;
+    max-width: 246px;
+    align-items: center;
+    border-radius: 15px;
+    height: 45px;
+    margin: 10px 0px 15px 0px;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+
+    &__number{ 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            border: 1px solid $colour-primary;
+            font-size: 12px;
+            color: #FFFFFF;
+            background-color: $colour-primary;
+            position: absolute;
+            left: -5px;
+        }
+
+        &__icon{
+            padding: 0px 10px 0px 20px;
+        }
+    }
+
+.restaurants{
+    background-color: rgba(247,247,247,255);
+    width: 100%;
+}
+
+.restaurant-card{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0px 0px 20px 20px;
+
+    &__img {
+    height: 140px;
+    width: 100%;
+    max-width: 246px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+&__link{
+    width: 80%;
+    max-width: 246px;
+    position:relative;
+}
+
+&__new{
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    background-color: rgba(153,226,208,255)
+}
+}
+
+.restaurant-details{
+    @include row;
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 20px 20px;
+    padding: 0px 0px 0px 5px;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+footer{
+    background-color: rgba(53,53,53,255);
+    color: #FFFFFF;
+    display: flex;
+    height: 140px;
+flex-direction: column;
+
+&__list{
+    color: #FFFFFF;
+}
+
+}
+

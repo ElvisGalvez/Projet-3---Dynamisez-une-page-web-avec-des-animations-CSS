@@ -13,11 +13,17 @@
         url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap');
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif, 'Shrikhand', cursive;
     margin: 0px;
     padding: 0px;
+    
 }
 
 body {
