@@ -16,22 +16,22 @@ header {
     @include row;
     justify-content: center;
     box-shadow: inset 0px 2px 2px rgba(124, 122, 122, 0.5);
-    background-color: rgba(234,234,234,255);
+    background-color: rgba(234, 234, 234, 255);
     padding: 10px 0px 10px 0px;
     font-size: 14px;
 
-    &__text{
+    &__text {
         font-weight: bold;
     }
-    
-    &__icon{
+
+    &__icon {
         padding: 0px 15px 0px 0px;
     }
 }
 
-.presentation{
-    background-color: rgba(247,247,247,255);
-    padding: 0px 0px 40px 10px;
+.presentation {
+    background-color: rgba(247, 247, 247, 255);
+    padding: 0px 0px 40px 0px;
     margin: 0px 0px 35px 0px;
     display: flex;
     flex-direction: column;
@@ -41,13 +41,13 @@ header {
     height: 250px;
 }
 
-.steps{
+.steps {
     margin: 0px 0px 30px 10px;
 }
 
-.steps-menu{
+.steps-menu {
     @include row;
-    background-color: rgba(247,247,247,255);
+    background-color: rgba(247, 247, 247, 255);
     box-shadow: 2px 2px 5px #ccc;
     width: 90%;
     max-width: 246px;
@@ -59,59 +59,60 @@ header {
     font-weight: bold;
     position: relative;
 
-    &__number{ 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-            border: 1px solid $colour-primary;
-            font-size: 12px;
-            color: #FFFFFF;
-            background-color: $colour-primary;
-            position: absolute;
-            left: -5px;
-        }
-
-        &__icon{
-            padding: 0px 10px 0px 20px;
-        }
+    &__number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 1px solid $colour-primary;
+        font-size: 12px;
+        color: #FFFFFF;
+        background-color: $colour-primary;
+        position: absolute;
+        left: -5px;
     }
 
-.restaurants{
-    background-color: rgba(247,247,247,255);
+    &__icon {
+        padding: 0px 10px 0px 20px;
+    }
+}
+
+.restaurants {
+    background-color: rgba(247, 247, 247, 255);
     width: 100%;
 }
 
-.restaurant-card{
+.restaurant-card {
     display: flex;
     justify-content: center;
     width: 80%;
     margin: 0px 0px 20px 20px;
 
     &__img {
-    height: 140px;
-    width: 100%;
-    max-width: 246px;
-    border-radius: 20px 20px 0px 0px;
-    object-fit: cover;
-}
-&__link{
-    width: 80%;
-    max-width: 246px;
-    position:relative;
+        height: 140px;
+        width: 100%;
+        max-width: 246px;
+        border-radius: 20px 20px 0px 0px;
+        object-fit: cover;
+    }
+
+    &__link {
+        width: 80%;
+        max-width: 246px;
+        position: relative;
+    }
+
+    &__new {
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        background-color: rgba(153, 226, 208, 255)
+    }
 }
 
-&__new{
-    position: absolute;
-    top: 15px;
-    right: 25px;
-    background-color: rgba(153,226,208,255)
-}
-}
-
-.restaurant-details{
+.restaurant-details {
     @include row;
     background-color: #FFFFFF;
     border-radius: 0px 0px 20px 20px;
@@ -120,23 +121,60 @@ header {
     align-items: center;
     justify-content: space-between;
 
-    &__info{
+    &__info {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
     }
 }
 
-footer{
-    background-color: rgba(53,53,53,255);
+
+.menu-img {
+    width: 100%;
+}
+
+.main-menu {
+    background-color: rgba(234, 234, 234, 255);
+
+    .menu-theme{
+        @include row;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+.menu-category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title{
+        font-weight: 100;
+    }
+}
+
+.menu-selection{
+    @include row;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    width: 90%;
+    height: 40px;
+    padding: 0px 0px 0px 5px;
+
+    &__description{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+
+.footer {
+    background-color: rgba(53, 53, 53, 255);
     color: #FFFFFF;
     display: flex;
-    height: 140px;
-flex-direction: column;
-
-&__list{
-    color: #FFFFFF;
+    height: 160px;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
 }
-
-}
-

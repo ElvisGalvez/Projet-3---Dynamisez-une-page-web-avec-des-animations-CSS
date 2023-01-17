@@ -72,7 +72,7 @@ header h1 {
 
 .presentation {
   background-color: rgb(247, 247, 247);
-  padding: 0px 0px 40px 10px;
+  padding: 0px 0px 40px 0px;
   margin: 0px 0px 35px 0px;
   display: flex;
   flex-direction: column;
@@ -166,13 +166,50 @@ header h1 {
   justify-content: space-around;
 }
 
-footer {
+.menu-img {
+  width: 100%;
+}
+
+.main-menu {
+  background-color: rgb(234, 234, 234);
+}
+.main-menu .menu-theme {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu-category__title {
+  font-weight: 100;
+}
+
+.menu-selection {
+  display: flex;
+  flex-direction: row;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  width: 90%;
+  height: 40px;
+  padding: 0px 0px 0px 5px;
+}
+.menu-selection__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.footer {
   background-color: rgb(53, 53, 53);
   color: #FFFFFF;
   display: flex;
-  height: 140px;
+  height: 160px;
   flex-direction: column;
-}
-footer__list {
-  color: #FFFFFF;
+  width: 100%;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
