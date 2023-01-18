@@ -42,15 +42,26 @@ header {
 }
 
 .steps {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
     margin: 0px 0px 30px 10px;
+    align-items: center;
+
+    &__title {
+        text-align: left;
+        width: 60%;
+        max-width: 250px;
+        margin: 0px 0px 10px 0px;
+    }
 }
 
 .steps-menu {
     @include row;
     background-color: rgba(247, 247, 247, 255);
     box-shadow: 2px 2px 5px #ccc;
-    width: 90%;
-    max-width: 246px;
+    width: 70%;
+    max-width: 250px;
     align-items: center;
     border-radius: 15px;
     height: 45px;
@@ -131,40 +142,91 @@ header {
 
 .menu-img {
     width: 100%;
+    max-width: 100%;
 }
 
 .main-menu {
     background-color: rgba(234, 234, 234, 255);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-top: -50px;
+    position: relative;
+    padding: 25px 0px 0px 0px;
 
-    .menu-theme{
+    .menu-theme {
         @include row;
         align-items: center;
         justify-content: space-around;
+        margin: 0px 0px 20px 0px;
+        font-size: 20px;
+
+        h2 {
+            font-family: 'Shrikhand';
+            font-style: italic;
+        }
     }
 }
 
-.menu-category{
+.menu-category {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    display: flex;
     align-items: center;
+    font-size: 14px;
+    margin: 0px 0px 30px 0px;
 
-    &__title{
+    &__title {
+        width: 10%;
+        max-width: 300px;
+        border-bottom: 3px solid $colour-tertiary;
+        position: relative;
+        left: -120px;
+        padding: 0px 0px 5px 0px;
+    }
+
+    h3 {
         font-weight: 100;
     }
 }
 
-.menu-selection{
+
+
+
+.menu-selection {
     @include row;
     background-color: #FFFFFF;
     border-radius: 10px;
-    width: 90%;
-    height: 40px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    width: 70%;
+    max-width: 300px;
+    height: 50px;
     padding: 0px 0px 0px 5px;
+    margin: 10px 0px 10px 0px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
 
-    &__description{
+
+    &__description {
         display: flex;
+        height: 100%;
         flex-direction: column;
         justify-content: space-evenly;
+        padding: 0px 0px 0px 10px;
+    }
+
+    &__price {
+        font-weight: bold;
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+        padding: 0px 10px 5px 10px;
+    }
+
+    &__title {
+
+        font-weight: bolder;
     }
 }
 
