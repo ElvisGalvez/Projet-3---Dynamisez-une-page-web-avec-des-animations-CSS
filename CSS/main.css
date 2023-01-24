@@ -6,11 +6,6 @@
     par exemple la police de caractères et les normes que vous voulez appliquer sur 
     tout votre site, telles que le box-sizing ;
 */
-/*@font-face {
-    font-family: 'Shrikhand', 'Roboto';
-    src: url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap'),
-    url('https://fonts.googleapis.com/css2? family= Roboto:wght@100;300;400;500;700;900 & display=swap');
-}*/
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2? family= Roboto:wght@100;300;400;500;700;900 & display=swap");
 a {
@@ -279,6 +274,68 @@ body {
 }
 .menu-selection__title {
   font-weight: bolder;
+}
+
+/*
+.menu-selection{
+    &:hover 
+    &__check{
+        transform: translateX(-30px);
+    }
+&__icon{
+    border-radius: 50%;
+    border: 2px solid white;
+    color: $colour-tertiary;
+    background-color: #FFFFFF;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .menu-selection__check{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF;
+        border-radius: 0px 10px 10px 0px;
+        height: 100%;
+        width: 40px;
+        background-color: $colour-tertiary;
+        transition: transform 500ms ease-in-out;
+    }
+}
+*/
+.menu-selection {
+  position: relative;
+  overflow: hidden;
+}
+.menu-selection:hover .menu-selection__check {
+  transform: translateX(-40px);
+}
+.menu-selection__icon {
+  border-radius: 50%;
+  border: 2px solid white;
+  color: #99E2D0;
+  background-color: #FFFFFF;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-selection__check {
+  right: -40px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  border-radius: 0px 10px 10px 0px;
+  height: 100%;
+  width: 40px;
+  background-color: #99E2D0;
+  transition: transform 500ms ease-in-out;
 }
 
 .footer {
