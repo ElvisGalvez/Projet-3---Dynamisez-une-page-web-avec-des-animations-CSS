@@ -259,11 +259,15 @@ body {
   font-size: 12px;
 }
 .menu-selection__description {
-  display: flex;
+  display: inline-block;
   height: 100%;
   flex-direction: column;
   justify-content: space-evenly;
   padding: 0px 0px 0px 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 200px;
 }
 .menu-selection__price {
   font-weight: bold;
@@ -287,9 +291,6 @@ body {
 .menu-selection:hover .menu-selection__price {
   transform: translateX(-40px);
 }
-.menu-selection:hover .menu-selection__icon {
-  transform: rotate(1turn);
-}
 .menu-selection__icon {
   border-radius: 50%;
   border: 2px solid white;
@@ -300,7 +301,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: transform 800ms ease-in-out;
 }
 .menu-selection__check {
   right: -40px;
@@ -317,10 +317,6 @@ body {
 }
 .menu-selection__price {
   transition: transform 500ms ease-in-out;
-}
-
-.btn-container:focus {
-  background: linear-gradient(to top, #9356DC, #FF79DA);
 }
 
 .footer {
