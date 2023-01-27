@@ -1,0 +1,185 @@
+
+/* Animation check des menus et décalage du prix */
+
+.menu-selection {
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+        .menu-selection__check {
+            transform: translateX(-40px);
+        }
+
+        .menu-selection__price {
+            transform: translateX(-40px);
+        }
+
+        .menu-selection__icon {
+            transform: rotate(1turn);
+        }
+    }
+
+
+    &__icon {
+        border-radius: 50%;
+        border: 2px solid white;
+        color: $colour-tertiary;
+        background-color: #FFFFFF;
+        height: 25px;
+        width: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 800ms ease-in-out;
+    }
+
+    &__check {
+        right: -40px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF;
+        border-radius: 0px 10px 10px 0px;
+        height: 100%;
+        width: 40px;
+        background-color: $colour-tertiary;
+        transition: transform 500ms ease-in-out;
+    }
+
+    &__price {
+        transition: transform 500ms ease-in-out;
+    }
+}
+
+/* Animation du coeur */
+
+.like-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.like-icon--empty {
+    position: absolute;
+}
+
+.like-icon--full {
+    position: absolute;
+    opacity: 0;
+    background: linear-gradient(to top, $colour-primary, $colour-secondary);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.like-icon--full {
+    &:hover {
+        opacity: 1;
+        transition: opacity 1100ms;
+    }
+}
+
+/* Animation apparition progressive des menus */
+
+.menu-load--1 {
+    animation: appear 200ms;
+    transform-origin: 50% top;
+    animation-delay: 1500ms;
+}
+
+.menu-load--2 {
+    animation: appear 400ms;
+    transform-origin: 50% top;
+    animation-delay: 1600ms;
+}
+
+.menu-load--3 {
+    animation: appear 600ms;
+    transform-origin: 50% top;
+    animation-delay: 1700ms;
+}
+
+.menu-load--4 {
+    animation: appear 800ms;
+    transform-origin: 50% top;
+    animation-delay: 1800ms;
+}
+
+@keyframes appear {
+    0% {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+
+    25% {
+        transform: scaleY(0.25);
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 0.50;
+        transform: scaleY(0.50);
+    }
+
+    75% {
+        opacity: 0.75;
+        transform: scaleY(0.75);
+    }
+
+    100% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
+/* Animation page de chargement */
+
+.loader{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.7;
+    animation: fadeOut 2s ease-in-out;
+  animation-fill-mode: forwards;
+  }
+
+  .loader-anim {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border: 20px solid $colour-secondary;
+    background-color: $colour-primary;
+    border-radius: 50%;
+    border-top: 20px solid $colour-tertiary;
+    animation: load 1.5s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+
+  @keyframes load {
+    
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

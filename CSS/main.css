@@ -46,6 +46,219 @@ body {
   margin: 15px 0px 30px 0px;
 }
 
+/* Animation check des menus et décalage du prix */
+.menu-selection {
+  position: relative;
+  overflow: hidden;
+}
+.menu-selection:hover .menu-selection__check {
+  transform: translateX(-40px);
+}
+.menu-selection:hover .menu-selection__price {
+  transform: translateX(-40px);
+}
+.menu-selection:hover .menu-selection__icon {
+  transform: rotate(1turn);
+}
+.menu-selection__icon {
+  border-radius: 50%;
+  border: 2px solid white;
+  color: #99E2D0;
+  background-color: #FFFFFF;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 800ms ease-in-out;
+}
+.menu-selection__check {
+  right: -40px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  border-radius: 0px 10px 10px 0px;
+  height: 100%;
+  width: 40px;
+  background-color: #99E2D0;
+  transition: transform 500ms ease-in-out;
+}
+.menu-selection__price {
+  transition: transform 500ms ease-in-out;
+}
+
+/* Animation du coeur */
+.like-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.like-icon--empty {
+  position: absolute;
+}
+
+.like-icon--full {
+  position: absolute;
+  opacity: 0;
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.like-icon--full:hover {
+  opacity: 1;
+  transition: opacity 1100ms;
+}
+
+/* Animation apparition progressive des menus */
+.menu-load--1 {
+  -webkit-animation: appear 200ms;
+          animation: appear 200ms;
+  transform-origin: 50% top;
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
+}
+
+.menu-load--2 {
+  -webkit-animation: appear 400ms;
+          animation: appear 400ms;
+  transform-origin: 50% top;
+  -webkit-animation-delay: 1600ms;
+          animation-delay: 1600ms;
+}
+
+.menu-load--3 {
+  -webkit-animation: appear 600ms;
+          animation: appear 600ms;
+  transform-origin: 50% top;
+  -webkit-animation-delay: 1700ms;
+          animation-delay: 1700ms;
+}
+
+.menu-load--4 {
+  -webkit-animation: appear 800ms;
+          animation: appear 800ms;
+  transform-origin: 50% top;
+  -webkit-animation-delay: 1800ms;
+          animation-delay: 1800ms;
+}
+
+@-webkit-keyframes appear {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  25% {
+    transform: scaleY(0.25);
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+    transform: scaleY(0.5);
+  }
+  75% {
+    opacity: 0.75;
+    transform: scaleY(0.75);
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  25% {
+    transform: scaleY(0.25);
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+    transform: scaleY(0.5);
+  }
+  75% {
+    opacity: 0.75;
+    transform: scaleY(0.75);
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+/* Animation page de chargement */
+.loader {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  -webkit-animation: fadeOut 2s ease-in-out;
+          animation: fadeOut 2s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.loader-anim {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  border: 20px solid #FF79DA;
+  background-color: #9356DC;
+  border-radius: 50%;
+  border-top: 20px solid #99E2D0;
+  -webkit-animation: load 1.5s ease-in-out;
+          animation: load 1.5s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes load {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes load {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .header {
   display: flex;
   justify-content: center;
@@ -186,7 +399,7 @@ body {
   padding: 0px 0px 0px 5px;
   height: 60px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .restaurant-details__info {
   display: flex;
@@ -277,150 +490,6 @@ body {
   font-weight: bolder;
 }
 
-.menu-selection {
-  position: relative;
-  overflow: hidden;
-}
-.menu-selection:hover .menu-selection__check {
-  transform: translateX(-40px);
-}
-.menu-selection:hover .menu-selection__price {
-  transform: translateX(-40px);
-}
-.menu-selection:hover .menu-selection__icon {
-  transform: rotate(1turn);
-}
-.menu-selection__icon {
-  border-radius: 50%;
-  border: 2px solid white;
-  color: #99E2D0;
-  background-color: #FFFFFF;
-  height: 25px;
-  width: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: transform 800ms ease-in-out;
-}
-.menu-selection__check {
-  right: -40px;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #FFFFFF;
-  border-radius: 0px 10px 10px 0px;
-  height: 100%;
-  width: 40px;
-  background-color: #99E2D0;
-  transition: transform 500ms ease-in-out;
-}
-.menu-selection__price {
-  transition: transform 500ms ease-in-out;
-}
-
-.like-icon--empty {
-  position: absolute;
-}
-
-.like-icon--full {
-  position: absolute;
-  opacity: 0;
-  background: linear-gradient(to top, #9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.like-icon--full:hover {
-  opacity: 1;
-  transition: opacity 1100ms;
-}
-
-.menu-load--1 {
-  -webkit-animation: appear 200ms;
-          animation: appear 200ms;
-  transform-origin: 50% top;
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
-}
-
-.menu-load--2 {
-  -webkit-animation: appear 400ms;
-          animation: appear 400ms;
-  transform-origin: 50% top;
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
-}
-
-.menu-load--3 {
-  -webkit-animation: appear 600ms;
-          animation: appear 600ms;
-  transform-origin: 50% top;
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
-}
-
-@-webkit-keyframes appear {
-  0% {
-    transform: scaleY(0);
-    opacity: 0;
-  }
-  25% {
-    transform: scaleY(0.25);
-    opacity: 0.25;
-  }
-  50% {
-    opacity: 0.5;
-    transform: scaleY(0.5);
-  }
-  75% {
-    transform: scaleY(0.75);
-  }
-  100% {
-    transform: scaleY(1);
-    opacity: 1;
-  }
-}
-
-@keyframes appear {
-  0% {
-    transform: scaleY(0);
-    opacity: 0;
-  }
-  25% {
-    transform: scaleY(0.25);
-    opacity: 0.25;
-  }
-  50% {
-    opacity: 0.5;
-    transform: scaleY(0.5);
-  }
-  75% {
-    transform: scaleY(0.75);
-  }
-  100% {
-    transform: scaleY(1);
-    opacity: 1;
-  }
-}
-/*
-      .loading-page {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: rgba(255, 255, 255, 0.5);
-        z-index: 3;
-      }
-
-      A TERMINER
- */
 .footer {
   background-color: rgb(53, 53, 53);
   color: #FFFFFF;

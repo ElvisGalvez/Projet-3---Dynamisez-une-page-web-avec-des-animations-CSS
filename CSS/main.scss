@@ -1,6 +1,7 @@
 @import "utils/variables";
 @import "base/base";
 @import "composants/boutons";
+@import "composants/animations";
 
 .header {
     display: flex;
@@ -152,7 +153,7 @@
     padding: 0px 0px 0px 5px;
     height: 60px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 
     &__info {
         display: flex;
@@ -213,9 +214,6 @@
     }
 }
 
-
-
-
 .menu-selection {
     @include row;
     background-color: #FFFFFF;
@@ -252,141 +250,6 @@
         font-weight: bolder;
     }
 }
-
-
-.menu-selection {
-    position: relative;
-    overflow: hidden;
-
-    &:hover {
-        .menu-selection__check {
-            transform: translateX(-40px);
-        }
-
-        .menu-selection__price {
-            transform: translateX(-40px);
-        }
-
-        .menu-selection__icon {
-            transform: rotate(1turn);
-        }
-    }
-
-
-    &__icon {
-        border-radius: 50%;
-        border: 2px solid white;
-        color: $colour-tertiary;
-        background-color: #FFFFFF;
-        height: 25px;
-        width: 25px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: transform 800ms ease-in-out;
-    }
-
-    &__check {
-        right: -40px;
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #FFFFFF;
-        border-radius: 0px 10px 10px 0px;
-        height: 100%;
-        width: 40px;
-        background-color: $colour-tertiary;
-        transition: transform 500ms ease-in-out;
-    }
-
-    &__price {
-        transition: transform 500ms ease-in-out;
-    }
-}
-
-.like-icon--empty {
-    position: absolute;
-}
-
-.like-icon--full {
-    position: absolute;
-    opacity: 0;
-    background: linear-gradient(to top, $colour-primary, $colour-secondary);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.like-icon--full {
-    &:hover {
-        opacity: 1;
-        transition: opacity 1100ms;
-    }
-}
-
-
-.menu-load--1 {
-    animation: appear 200ms;
-    transform-origin: 50% top;
-    animation-delay: 200ms;
-}
-
-.menu-load--2 {
-    animation: appear 400ms;
-    transform-origin: 50% top;
-    animation-delay: 200ms;
-}
-
-.menu-load--3 {
-    animation: appear 600ms;
-    transform-origin: 50% top;
-    animation-delay: 200ms;
-}
-
-@keyframes appear {
-    0% {
-        transform: scaleY(0);
-        opacity: 0;
-    }
-
-    25% {
-        transform: scaleY(0.25);
-        opacity: 0.25;
-    }
-
-    50% {
-        opacity: 0.50;
-        transform: scaleY(0.50);
-    }
-
-    75% {
-        
-        transform: scaleY(0.75);
-    }
-
-    100% {
-        transform: scaleY(1);
-        opacity: 1;
-    }
-}
-/*
-      .loading-page {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: rgba(255, 255, 255, 0.5);
-        z-index: 3;
-      }
-
-      A TERMINER
- */
 
 
 .footer {
