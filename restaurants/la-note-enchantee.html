@@ -27,9 +27,9 @@
     <main class="main-menu">
         <div class="menu-theme">
             <h2>La note enchantée</h2>
-            <div>
-                <i class="fa-regular fa-heart like-icon--empty"></i>
-                <i class="fa-solid fa-heart like-icon--full"></i>
+            <div class="heart-container">
+                <i class="fa-regular fa-heart like-icon like-icon--empty"></i>
+                <i class="fa-solid fa-heart like-icon like-icon--full"></i>
             </div>
         </div>
 
@@ -102,7 +102,7 @@
                     <h3>PLATS</h3>
                 </div>
 
-                <div class="menu-selection">
+                <div class="menu-selection menu-load--1">
                     <div class="menu-selection__description">
                         <h4 class="menu-selection__title">Noix de coquilles Saint-Jacques</h4>
                         <p>Sur lit de purée de céleri-rave</p>
@@ -115,7 +115,7 @@
                     </div>
                 </div>
 
-                <div class="menu-selection">
+                <div class="menu-selection menu-load--2">
                     <div class="menu-selection__description">
                         <h4 class="menu-selection__title">Langoustine poêlée</h4>
                         <p>Purée de patate douce</p>
@@ -128,7 +128,7 @@
                     </div>
                 </div>
 
-                <div class="menu-selection">
+                <div class="menu-selection menu-load--3">
                     <div class="menu-selection__description">
                         <h4 class="menu-selection__title">Mijoté de queue de boeuf</h4>
                         <p>Et riz sauvage aux zestes de citron</p>
@@ -149,7 +149,7 @@
                     <h3>DESSERTS</h3>
                 </div>
 
-                <div class="menu-selection">
+                <div class="menu-selection menu-load--1">
                     <div class="menu-selection__description">
                         <h4 class="menu-selection__title">Macaron noisette et chocolat</h4>
                         <p>Glace au caramel brun et sel de Guérande</p>
@@ -162,7 +162,7 @@
                     </div>
                 </div>
 
-                <div class="menu-selection">
+                <div class="menu-selection menu-load--2">
                     <div class="menu-selection__description">
                         <h4 class="menu-selection__title">Fondant au chocolat</h4>
                         <p>Revisité</p>
@@ -175,7 +175,7 @@
                     </div>
                 </div>
 
-                <div class="menu-selection">
+                <div class="menu-selection menu-load--3">
                     <div class="menu-selection__description">
                         <h4 class="menu-selection__title">Baba au rhum revisité</h4>
                         <p>Avec son coulis de citron</p>
@@ -188,7 +188,7 @@
                     </div>
                 </div>
 
-                <div class="menu-selection">
+                <div class="menu-selection menu-load--4">
                     <div class="menu-selection__description">
                         <h4 class="menu-selection__title">Tarte au citron meringuée</h4>
                         <p>Déstructurée</p>
@@ -200,19 +200,21 @@
                         </div>
                     </div>
                 </div>
-
-
-                <button class="presentation__btn restaurant-margin">Commander</button>
             </div>
-
-
-
-
-
-
-
-
         </section>
+        <div class="button-container">
+            <button class="presentation__btn restaurant-margin">Commander</button>
+        </div>
+
+
+
+
+
+
+
+
+
+
 
     </main>
 
@@ -245,7 +247,7 @@
                 </li>
 
                 <li class="list-line">
-                    <a class="list-line__link" href="#">
+                    <a class="list-line__link" href="mailto:">
                         <p class="list-line__text">Contact</p>
                     </a>
                 </li>
@@ -253,7 +255,9 @@
             </ul>
         </div>
     </footer>
-
+    <div class="loader">
+        <span class="loader-anim"></span>
+    </div>
 </body>
 
 </html>

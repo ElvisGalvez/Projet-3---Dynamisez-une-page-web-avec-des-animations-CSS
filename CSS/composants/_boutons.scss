@@ -1,6 +1,13 @@
 
+.button-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .presentation{
     &__btn{ 
+        display: flex;
     background: linear-gradient(to top, $colour-primary, $colour-secondary);
     color: white; 
     padding: 11px 27px;

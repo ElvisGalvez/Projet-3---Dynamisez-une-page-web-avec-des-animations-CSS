@@ -1,4 +1,6 @@
 
+
+
 /* Animation check des menus et décalage du prix */
 
 .menu-selection {
@@ -54,14 +56,21 @@
 
 /* Animation du coeur */
 
+.heart-container{
+    display: flex;
+    align-items: center;
+}
+
 .like-icon{
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .like-icon--empty {
     position: absolute;
+    font-size: 25px;
 }
 
 .like-icon--full {
@@ -72,6 +81,8 @@
     -moz-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 25px;
+
 }
 
 .like-icon--full {
