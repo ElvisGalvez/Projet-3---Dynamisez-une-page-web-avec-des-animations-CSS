@@ -472,7 +472,7 @@ body {
 }
 .menu-category__title {
   width: 10%;
-  max-width: 300px;
+  max-width: 200px;
   border-bottom: 3px solid #99E2D0;
   position: relative;
   left: -120px;
@@ -541,12 +541,30 @@ body {
     width: 30%;
     height: 100%;
   }
+  .menu-category__title {
+    position: unset;
+    width: 40%;
+    max-width: 120px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+  }
   .menu-selection {
-    height: 20%;
+    height: 120px;
+    width: 95%;
+    font-size: 14px;
   }
   .restaurants__container {
     display: flex;
     flex-direction: row;
+  }
+}
+@media (min-width: 1024px) {
+  .menu-selection {
+    font-size: 17px;
+  }
+  .menu-theme h2 {
+    font-size: 40px;
   }
 }
 .footer {
@@ -564,7 +582,7 @@ body {
   display: flex;
   font-family: "Shrikhand";
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 200;
   font-style: italic;
   padding: 0px 0px 20px 0px;
 }
