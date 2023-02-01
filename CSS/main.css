@@ -496,7 +496,7 @@ body {
   background-color: #FFFFFF;
   border-radius: 10px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  width: 75%;
+  width: 90%;
   max-width: 300px;
   height: 53px;
   padding: 0px 0px 0px 5px;
@@ -512,7 +512,12 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   padding: 0px 0px 0px 10px;
-  width: 250px;
+  width: 80%;
+}
+.menu-selection .menu-selection__description p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menu-selection__price {
   font-weight: bold;
@@ -520,7 +525,7 @@ body {
   align-items: flex-end;
   justify-content: flex-end;
   height: 100%;
-  margin: 0px 10px 5px 0px;
+  padding: 0px 10px 5px 10px;
   width: 50px;
 }
 .menu-selection__title {
@@ -583,7 +588,7 @@ body {
 }
 @media (min-width: 1024px) {
   .menu-selection {
-    font-size: 17px;
+    font-size: 16px;
   }
   .menu-theme h2 {
     font-size: 40px;
