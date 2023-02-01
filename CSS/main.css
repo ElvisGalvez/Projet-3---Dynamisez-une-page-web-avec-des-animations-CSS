@@ -129,6 +129,8 @@ body {
   transform-origin: 50% top;
   -webkit-animation-delay: 1500ms;
           animation-delay: 1500ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .menu-load--2 {
@@ -137,6 +139,8 @@ body {
   transform-origin: 50% top;
   -webkit-animation-delay: 1600ms;
           animation-delay: 1600ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .menu-load--3 {
@@ -145,6 +149,8 @@ body {
   transform-origin: 50% top;
   -webkit-animation-delay: 1700ms;
           animation-delay: 1700ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .menu-load--4 {
@@ -153,6 +159,8 @@ body {
   transform-origin: 50% top;
   -webkit-animation-delay: 1800ms;
           animation-delay: 1800ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes appear {
@@ -288,7 +296,7 @@ body {
 }
 .header__link {
   position: absolute;
-  left: 50px;
+  left: 30px;
   transform: translateY(-60%);
   font-size: 25px;
 }
@@ -496,6 +504,7 @@ body {
   justify-content: space-between;
   align-items: center;
   font-size: 12px;
+  opacity: 0;
 }
 .menu-selection__description {
   display: flex;
@@ -518,7 +527,7 @@ body {
   font-weight: bolder;
 }
 
-@media (min-width: 481px) {
+@media (min-width: 768px) {
   .steps {
     width: 100%;
   }
@@ -551,12 +560,25 @@ body {
   }
   .menu-selection {
     height: 120px;
-    width: 95%;
+    width: 90%;
     font-size: 14px;
   }
   .restaurants__container {
     display: flex;
     flex-direction: row;
+  }
+  .footer {
+    justify-content: space-evenly;
+  }
+  .footer__container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .list-line__link {
+    padding: 0px 25px 0px 25px;
+    justify-content: space-around;
   }
 }
 @media (min-width: 1024px) {
@@ -565,6 +587,9 @@ body {
   }
   .menu-theme h2 {
     font-size: 40px;
+  }
+  .list-line__link {
+    font-size: 20px;
   }
 }
 .footer {
@@ -581,7 +606,7 @@ body {
 .footer__logo {
   display: flex;
   font-family: "Shrikhand";
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 200;
   font-style: italic;
   padding: 0px 0px 20px 0px;

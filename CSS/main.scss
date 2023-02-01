@@ -24,7 +24,7 @@
 
     &__link {
         position: absolute;
-        left: 50px;
+        left: 30px;
         transform: translateY(-60%);
         font-size: 25px;
     }
@@ -247,7 +247,7 @@
     justify-content: space-between;
     align-items: center;
     font-size: 12px;
-
+opacity: 0;
 
     &__description {
         display: flex;
@@ -277,7 +277,7 @@
 }
 
 
-@media (min-width: 481px) {
+@media (min-width: 768px) {
     .steps {
         width: 100%;
 
@@ -317,17 +317,33 @@
 
     .menu-selection {
         height: 120px;
-        width: 95%;
+        width: 90%;
         font-size: 14px;
 
     }
-
-
 
     .restaurants {
         &__container {
             display: flex;
             flex-direction: row;
+        }
+    }
+
+    .footer {
+        justify-content: space-evenly;
+
+        &__container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-around;
+        }
+    }
+
+    .list-line {
+        &__link {
+            padding: 0px 25px 0px 25px;
+            justify-content: space-around;
         }
     }
 }
@@ -338,10 +354,16 @@
     }
 
     .menu-theme {
- 
-        h2{
-        font-size: 40px;
+
+        h2 {
+            font-size: 40px;
+        }
     }
+
+    .list-line {
+        &__link {
+            font-size: 20px;
+        }
     }
 
 }
@@ -361,7 +383,7 @@
     &__logo {
         display: flex;
         font-family: 'Shrikhand';
-        font-size: 20px;
+        font-size: 25px;
         font-weight: 200;
         font-style: italic;
         padding: 0px 0px 20px 0px;

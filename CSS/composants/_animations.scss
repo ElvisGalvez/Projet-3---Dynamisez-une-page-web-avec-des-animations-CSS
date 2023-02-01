@@ -98,24 +98,28 @@
     animation: appear 200ms;
     transform-origin: 50% top;
     animation-delay: 1500ms;
+    animation-fill-mode: forwards;
 }
 
 .menu-load--2 {
     animation: appear 400ms;
     transform-origin: 50% top;
     animation-delay: 1600ms;
+    animation-fill-mode: forwards;
 }
 
 .menu-load--3 {
     animation: appear 600ms;
     transform-origin: 50% top;
     animation-delay: 1700ms;
+    animation-fill-mode: forwards;
 }
 
 .menu-load--4 {
     animation: appear 800ms;
     transform-origin: 50% top;
     animation-delay: 1800ms;
+    animation-fill-mode: forwards;
 }
 
 @keyframes appear {
