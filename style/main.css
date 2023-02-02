@@ -568,7 +568,7 @@ body {
     width: 90%;
     font-size: 14px;
   }
-  .restaurants__container {
+  .restaurants__row-container {
     display: flex;
     flex-direction: row;
   }
@@ -595,6 +595,25 @@ body {
   }
   .list-line__link {
     font-size: 20px;
+  }
+  .steps {
+    width: 100%;
+  }
+  .steps__title {
+    font-size: 25px;
+    font-size: 25px;
+  }
+  .steps-menu {
+    width: 30%;
+    height: 60px;
+  }
+  .restaurants__main-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .restaurants__row-container {
+    width: 100%;
   }
 }
 .footer {
