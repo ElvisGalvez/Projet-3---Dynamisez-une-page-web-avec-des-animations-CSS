@@ -1,0 +1,445 @@
+@import "utils/variables";
+@import "base/base";
+@import "composants/boutons";
+@import "composants/animations";
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 10px 0px;
+    align-items: center;
+
+    h1 {
+        @include header-typo;
+        flex-grow: 1;
+        font-weight: 500;
+    }
+
+    &__container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__link {
+        position: absolute;
+        left: 30px;
+        transform: translateY(-60%);
+        font-size: 25px;
+    }
+}
+
+
+.location {
+    @include row;
+    justify-content: center;
+    box-shadow: inset 0px 2px 2px rgba(124, 122, 122, 0.5);
+    background-color: rgba(234, 234, 234, 255);
+    padding: 10px 0px 10px 0px;
+    font-size: 14px;
+
+    &__text {
+        font-weight: bold;
+    }
+
+    &__icon {
+        padding: 0px 15px 0px 0px;
+    }
+}
+
+.presentation {
+    background-color: rgba(247, 247, 247, 255);
+    padding: 0px 0px 40px 0px;
+    margin: 0px 0px 35px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    height: 250px;
+}
+
+.steps {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 0px 0px 30px 0px;
+    align-items: center;
+
+    &__title {
+        text-align: left;
+        width: 60%;
+        max-width: 250px;
+        margin: 0px 0px 10px 0px;
+    }
+
+    &__container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.steps-menu {
+    @include row;
+    background-color: rgba(247, 247, 247, 255);
+    box-shadow: 2px 2px 5px #ccc;
+    width: 70%;
+    max-width: 250px;
+    align-items: center;
+    border-radius: 15px;
+    height: 45px;
+    margin: 10px 0px 15px 0px;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+
+    &__number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 1px solid $colour-primary;
+        font-size: 12px;
+        color: #FFFFFF;
+        background-color: $colour-primary;
+        position: absolute;
+        left: -5px;
+    }
+
+    &__icon {
+        padding: 0px 10px 0px 20px;
+    }
+}
+
+.restaurants {
+    background-color: rgba(247, 247, 247, 255);
+    width: 100%;
+
+    &__title {
+        display: flex;
+        width: 100%;
+        padding: 20px 0px 20px 0px;
+        justify-content: center;
+
+    }
+
+}
+
+.restaurant-card {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+    padding: 0px 0px 35px 0px;
+
+    &__img {
+        height: 140px;
+        width: 100%;
+        max-width: 246px;
+        border-radius: 20px 20px 0px 0px;
+
+    }
+
+    &__link {
+        width: 80%;
+        max-width: 246px;
+        position: relative;
+    }
+
+    &__new {
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        background-color: rgba(153, 226, 208, 255)
+    }
+}
+
+.restaurant-details {
+    @include row;
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 20px 20px;
+    padding: 0px 0px 0px 5px;
+    height: 60px;
+    align-items: center;
+    justify-content: space-around;
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+
+.menu-img {
+    width: 100%;
+    max-height: 330px;
+    object-fit: cover;
+}
+
+.main-menu {
+    background-color: rgba(234, 234, 234, 255);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-top: -50px;
+    position: relative;
+    padding: 25px 0px 0px 0px;
+
+    .menu-theme {
+        @include row;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0px 0px 30px 0px;
+        font-size: 20px;
+        width: 90%;
+        height: 50px;
+
+        h2 {
+            font-family: 'Shrikhand';
+            font-style: italic;
+        }
+    }
+}
+
+.menus {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-category {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 0px 0px 25px 0px;
+
+    &__title {
+        width: 10%;
+        max-width: 200px;
+        border-bottom: 3px solid $colour-tertiary;
+        position: relative;
+        left: -120px;
+        padding: 0px 0px 5px 0px;
+    }
+
+    h3 {
+        font-weight: 100;
+    }
+}
+
+.menu-selection {
+    @include row;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 300px;
+    height: 53px;
+    padding: 0px 0px 0px 5px;
+    margin: 10px 0px 10px 0px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    opacity: 0;
+
+
+    &__description {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0px 0px 0px 10px;
+        width: 80%;
+    }
+
+    .menu-selection__description p {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    &__price {
+        font-weight: bold;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        height: 100%;
+        padding: 0px 10px 5px 10px;
+        width: 50px;
+    }
+
+    &__title {
+        font-weight: bolder;
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .steps {
+        width: 100%;
+
+        &__container {
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-around;
+        }
+
+        &__title {
+            display: flex;
+            justify-content: center;
+        }
+
+    }
+
+    .menus {
+        flex-direction: row;
+        width: 100%;
+        height: 500px;
+        justify-content: center;
+    }
+
+    .menu-category {
+        width: 30%;
+        height: 100%;
+
+        &__title {
+            position: unset;
+            width: 40%;
+            max-width: 120px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .menu-selection {
+        height: 120px;
+        width: 90%;
+        font-size: 14px;
+
+    }
+
+    .restaurants {
+        &__row-container {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    .footer {
+        justify-content: space-evenly;
+
+        &__container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-around;
+        }
+    }
+
+    .list-line {
+        &__link {
+            padding: 0px 25px 0px 25px;
+            justify-content: space-around;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .menu-selection {
+        font-size: 16px;
+    }
+
+    .menu-theme {
+
+        h2 {
+            font-size: 40px;
+        }
+    }
+
+    .list-line {
+        &__link {
+            font-size: 20px;
+        }
+    }
+
+.steps{
+    width: 100%;
+    &__title{
+        font-size: 25px;
+        font-size: 25px;
+    }
+}
+
+    .steps-menu{
+        width: 30%;
+        height: 60px;
+    }
+
+    
+    .restaurants{
+        &__main-container{
+        @include row;
+        width: 100%;
+    }
+    }
+    .restaurants__row-container{
+        width: 100%;
+    }
+}
+
+
+
+.footer {
+    background-color: rgba(53, 53, 53, 255);
+    color: #FFFFFF;
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 20px 0px 0px 0px;
+    text-align: left;
+
+    &__logo {
+        display: flex;
+        font-family: 'Shrikhand';
+        font-size: 25px;
+        font-weight: 200;
+        font-style: italic;
+        padding: 0px 0px 20px 0px;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+
+}
+
+.list-line {
+    display: flex;
+    padding: 0px 0px 10px 0px;
+
+    &__link {
+        @include row;
+        color: #FFFFFF;
+    }
+
+    &__icon {
+        width: 30px;
+    }
+
+}
