@@ -587,6 +587,18 @@ body {
   }
 }
 @media (min-width: 1024px) {
+  .location {
+    font-size: 20px;
+  }
+  .presentation__title {
+    font-size: 32px;
+  }
+  .presentation__text {
+    font-size: 20px;
+  }
+  .presentation__btn {
+    padding: 21px 37px;
+  }
   .menu-selection {
     font-size: 16px;
   }
@@ -605,7 +617,13 @@ body {
   }
   .steps-menu {
     width: 30%;
-    height: 60px;
+    height: 80px;
+    font-size: 17px;
+  }
+  .steps-menu__number {
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
   }
   .restaurants__main-container {
     display: flex;
