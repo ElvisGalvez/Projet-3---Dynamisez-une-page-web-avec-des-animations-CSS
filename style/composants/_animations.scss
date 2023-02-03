@@ -57,6 +57,7 @@
 /* Animation du coeur */
 
 .heart-container{
+    
     display: flex;
     align-items: center;
 }
@@ -69,6 +70,7 @@
 }
 
 .like-icon--empty {
+    
     position: absolute;
     font-size: 25px;
 }
@@ -88,7 +90,7 @@
 .like-icon--full {
     &:hover {
         opacity: 1;
-        transition: opacity 1100ms;
+        transition: opacity 1100ms ease-in-out;
     }
 }
 
