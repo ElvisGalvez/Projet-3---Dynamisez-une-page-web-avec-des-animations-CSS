@@ -513,7 +513,6 @@ body {
   padding: 0px 0px 0px 10px;
   width: 90%;
   max-width: calc(100% - 50px);
-  overflow: hidden;
 }
 .menu-selection__price {
   font-weight: bold;
@@ -530,12 +529,6 @@ body {
 }
 .menu-selection__title {
   font-weight: bolder;
-}
-
-.menu-selection__description p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .footer {
