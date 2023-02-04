@@ -274,7 +274,7 @@
         position: absolute;
         right: 0;
         top: 0;
-        
+
 
     }
 
@@ -402,20 +402,21 @@
 }
 
 @media (min-width: 1024px) {
-    
-.location{
-    font-size: 20px;
-}
 
-    .presentation{
-        &__title{
+    .location {
+        font-size: 20px;
+    }
+
+    .presentation {
+        &__title {
             font-size: 32px;
         }
-        &__text{
+
+        &__text {
             font-size: 20px;
         }
 
-        &__btn{
+        &__btn {
             padding: 21px 37px;
         }
     }
@@ -437,34 +438,36 @@
         }
     }
 
-.steps{
-    width: 100%;
-    &__title{
-        font-size: 25px;
-        font-size: 25px;
-    }
-}
+    .steps {
+        width: 100%;
 
-    .steps-menu{
+        &__title {
+            font-size: 25px;
+            font-size: 25px;
+        }
+    }
+
+    .steps-menu {
         width: 30%;
         height: 80px;
         font-size: 17px;
 
-        &__number{
+        &__number {
             font-size: 20px;
             width: 20px;
-        height: 20px;
+            height: 20px;
         }
     }
 
-    
-    .restaurants{
-        &__main-container{
-        @include row;
-        width: 100%;
+
+    .restaurants {
+        &__main-container {
+            @include row;
+            width: 100%;
+        }
     }
-    }
-    .restaurants__row-container{
+
+    .restaurants__row-container {
         width: 100%;
     }
 }
