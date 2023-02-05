@@ -510,9 +510,9 @@ body {
   height: 100%;
   flex-direction: column;
   justify-content: space-evenly;
-  padding: 0px 0px 0px 10px;
-  width: 90%;
-  max-width: calc(100% - 50px);
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu-selection__price {
   font-weight: bold;
@@ -520,14 +520,20 @@ body {
   align-items: flex-end;
   justify-content: flex-end;
   height: 100%;
-  padding: 0px 10px 5px 10px;
+  padding: 0px 5px 10px 0px;
   width: 40px;
-  position: absolute;
-  right: 0;
-  top: 0;
 }
 .menu-selection__title {
   font-weight: bolder;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu-selection__text {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .footer {
@@ -601,8 +607,17 @@ body {
   }
   .menu-selection {
     height: 120px;
-    width: 90%;
-    font-size: 14px;
+    width: 95%;
+    font-size: 13px;
+  }
+  .menu-selection__description {
+    white-space: normal;
+  }
+  .menu-selection__text {
+    white-space: normal;
+  }
+  .menu-selection__title {
+    white-space: normal;
   }
   .restaurants__row-container {
     display: flex;
@@ -668,5 +683,16 @@ body {
   }
   .restaurants__row-container {
     width: 100%;
+  }
+  .restaurant-card {
+    width: 100%;
+  }
+  .restaurant-card__img {
+    height: 200px;
+    max-width: 280px;
+  }
+  .restaurant-card__link {
+    width: 90%;
+    max-width: 280px;
   }
 }/*# sourceMappingURL=main.css.map */
