@@ -128,8 +128,8 @@ body {
   -webkit-animation: appear 200ms;
           animation: appear 200ms;
   transform-origin: 50% top;
-  -webkit-animation-delay: 1500ms;
-          animation-delay: 1500ms;
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -138,8 +138,8 @@ body {
   -webkit-animation: appear 400ms;
           animation: appear 400ms;
   transform-origin: 50% top;
-  -webkit-animation-delay: 1600ms;
-          animation-delay: 1600ms;
+  -webkit-animation-delay: 1100ms;
+          animation-delay: 1100ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -148,8 +148,8 @@ body {
   -webkit-animation: appear 600ms;
           animation: appear 600ms;
   transform-origin: 50% top;
-  -webkit-animation-delay: 1700ms;
-          animation-delay: 1700ms;
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -158,8 +158,8 @@ body {
   -webkit-animation: appear 800ms;
           animation: appear 800ms;
   transform-origin: 50% top;
-  -webkit-animation-delay: 1800ms;
-          animation-delay: 1800ms;
+  -webkit-animation-delay: 1300ms;
+          animation-delay: 1300ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }

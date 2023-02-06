@@ -250,12 +250,12 @@
 
 
     &__description {
-  display: flex;
+        display: flex;
         height: 100%;
         flex-direction: column;
         justify-content: space-evenly;
         width: 100%;
-    max-width: 250px;
+        max-width: 250px;
         text-overflow: ellipsis;
         overflow: hidden;
     }
@@ -269,22 +269,22 @@
         height: 100%;
         padding: 0px 5px 10px 0px;
         width: 20px;
- 
+
     }
 
     &__title {
         font-weight: bolder;
         white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
-    &__text{
+    &__text {
         display: block;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
     }
 }
 
@@ -349,7 +349,6 @@
             display: flex;
             justify-content: center;
         }
-
     }
 
     .menus {
@@ -377,16 +376,18 @@
         height: 120px;
         width: 95%;
         font-size: 13px;
-    &__description{
-        white-space: normal;
-    }
-    &__text{
-        white-space: normal;
-    }
 
-    &__title{
-        white-space: normal;
-    }
+        &__description {
+            white-space: normal;
+        }
+
+        &__text {
+            white-space: normal;
+        }
+
+        &__title {
+            white-space: normal;
+        }
     }
 
     .restaurants {
@@ -487,12 +488,12 @@
 
     .restaurant-card {
         width: 100%;
-    
+
         &__img {
             height: 200px;
             max-width: 280px;
         }
-    
+
         &__link {
             width: 90%;
             max-width: 280px;
